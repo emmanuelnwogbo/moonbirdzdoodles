@@ -11,6 +11,9 @@
       width: #{scaleValue(40)};
       position: relative;
       cursor: pointer;
+
+      font-size: #{scaleValue(27)};
+      font-weight: 700;
       
       & figure {
           position: absolute;
@@ -18,6 +21,15 @@
           left: #{scaleValue(-70)};;
           height: #{scaleValue(150)};
           width: #{scaleValue(350)};
+
+          & p {
+            background: linear-gradient(to right bottom,rgba(63,0,255,1),rgba(255,77,0, 1));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+          }
       }
       & img {
           object-fit: cover;
