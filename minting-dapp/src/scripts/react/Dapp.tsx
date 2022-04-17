@@ -176,7 +176,8 @@ export default class Dapp extends React.Component<Props, State> {
        <div className="dapp__left">
          <div className="dapp__left--midphrase">
           <span className="fff">MoonBirds Doodles is a collection</span>
-          <span className="fff">of 2300 NFTs hovering around the Ethereum blockchain.</span>
+          <span className="fff">of 2300 NFTs hovering around the</span>
+          <span className="fff">Ethereum blockchain.</span>
           <span className="transparent">Not affiliated with Moonbirds or Doodles.</span>
           <span className="transparent">FREE MINT by Spoof collective</span>
          </div>
