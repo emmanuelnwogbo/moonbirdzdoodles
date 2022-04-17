@@ -1,0 +1,30 @@
+:root {
+  --ideal-viewport-width: 1600;
+}
+
+@function scaleValue($value) {
+  @return calc(
+    #{$value} * (clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width))
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    color: #fff;
+    padding: #{scaleValue(75)} #{scaleValue(130)};
+
+    @media only screen and (max-width: 414px) { 
+      padding: #{scaleValue(75)} #{scaleValue(90)};
+    }
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
